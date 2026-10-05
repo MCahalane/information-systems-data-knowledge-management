@@ -15,6 +15,7 @@
 
 /* Keep the learning column intact while the objective rail stays alongside it. */
 .study-body{grid-template-columns:minmax(0,1fr) 245px;align-items:start}
+.concept{scroll-margin-top:92px}
 .study-body>.article,.study-body>.video-conversation,.study-body>.related-videos,.study-body>.section-tool{grid-column:1;min-width:0}
 .study-body>.right-rail{grid-column:2;grid-row:1 / span 4;min-width:0}
 .video-conversation{min-width:0}
