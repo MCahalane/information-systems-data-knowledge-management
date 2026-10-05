@@ -29,3 +29,4 @@
 .video-conversation h3,.video-conversation p{overflow-wrap:anywhere}
 .module-illustration{min-height:120px}
 @media(max-width:900px){.study-body>.right-rail{grid-column:1;grid-row:auto}.study-body>.article,.study-body>.video-conversation,.study-body>.related-videos,.study-body>.section-tool{grid-column:1}}
+.audio-feature{margin-bottom:26px}.audio-player{display:flex;align-items:center;padding:24px;background:#071725}.audio-player audio{width:100%}.audio-feature .intro-video-copy b{color:#fff}
