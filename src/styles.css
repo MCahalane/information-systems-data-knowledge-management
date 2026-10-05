@@ -16,6 +16,9 @@
 /* Keep the learning column intact while the objective rail stays alongside it. */
 .study-body{grid-template-columns:minmax(0,1fr) 245px;align-items:start}
 .concept{scroll-margin-top:92px}
+.study-lens{align-items:flex-start;height:auto;min-height:0}
+.study-lens p{white-space:pre-line;font-weight:400;font-size:14px;line-height:1.65}
+.study-lens p b{font-weight:400}
 .study-body>.article,.study-body>.video-conversation,.study-body>.related-videos,.study-body>.section-tool{grid-column:1;min-width:0}
 .study-body>.right-rail{grid-column:2;grid-row:1 / span 4;min-width:0}
 .video-conversation{min-width:0}
