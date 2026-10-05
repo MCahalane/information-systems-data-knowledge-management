@@ -12,6 +12,20 @@ if (typeof window !== 'undefined' && !window.__accordionScrollBound) {
       toggle.closest('.concept')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') document.querySelector('.glossary-window-head button')?.click();
+  });
+}
+
+if (typeof window !== 'undefined' && !window.__accordionScrollBound) {
+  window.__accordionScrollBound = true;
+  document.addEventListener('click', (event) => {
+    const toggle = event.target.closest?.('.concept-toggle');
+    if (!toggle) return;
+    requestAnimationFrame(() => {
+      toggle.closest('.concept')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
 }
 
 const quantumModule={id:'quantum',num:'08',title:'Quantum computing: the next frontier',time:'20 min',icon:Sparkles,summary:'Explore what quantum computers are, why they are difficult to build, and what they could mean for information systems in the future.',sections:[['What makes a computer quantum','Classical computers use bits that are 0 or 1. Quantum computers use qubits, which can be prepared in superpositions and linked through entanglement. These properties do not mean a quantum computer simply tries every answer at once; they enable carefully designed algorithms to shape probabilities so useful answers become more likely.'],['What could they mean for organisations','Quantum computing may eventually help with selected problems involving simulation, optimisation, search, and cryptography. Possible examples include modelling materials, improving logistics, balancing portfolios, or scheduling complex resources. Quantum machines are not expected to replace ordinary computers for everyday business work.'],['Why building one is difficult','Qubits are sensitive to heat, vibration, electromagnetic interference, and imperfect control. They can lose their quantum state before a calculation is complete. Researchers need specialised hardware, isolation, precise measurement, error correction, and supporting classical computers.'],['The information-systems implications','Organisations need to identify useful problems, prepare for changes to encryption, evaluate vendor claims, develop skills, and decide when experimentation is justified. Future systems will likely combine classical infrastructure with quantum processors.']]};
