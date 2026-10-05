@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Roadmap through the Information Systems data and knowledge management resource</title>
+  <desc id="desc">A clean serpentine roadmap connecting eight learning stops in sequence, from data and knowledge through data management, databases, analytics, knowledge management, cloud infrastructure, and quantum computing.</desc>
+  <rect width="1600" height="1000" fill="#f7f7f5"/>
+
+  <!-- Header -->
+  <rect width="1600" height="132" fill="#231f20"/>
+  <rect y="124" width="1600" height="8" fill="#ffe600"/>
+  <text x="70" y="52" fill="#ffe600" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" letter-spacing="3">INFORMATION SYSTEMS // LEARNING ROADMAP</text>
+  <text x="70" y="101" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="900">From data to organisational capability</text>
+  <text x="1530" y="55" text-anchor="end" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">FOLLOW THE TRAIL</text>
+  <text x="1530" y="82" text-anchor="end" fill="#ffe600" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">STEPS 01–08</text>
+
+  <!-- Intro -->
+  <text x="800" y="177" text-anchor="middle" fill="#231f20" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700">Each stop adds another layer to the question:</text>
+  <text x="800" y="209" text-anchor="middle" fill="#174ca0" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="900">How do organisations turn data into useful action?</text>
+
+  <!-- Trail: one simple serpentine route -->
+  <path d="M 215 405 L 595 405 L 975 405 L 1355 405 L 1355 760 L 975 760 L 595 760 L 215 760" fill="none" stroke="#c5c5c5" stroke-width="68" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 215 405 L 595 405 L 975 405 L 1355 405 L 1355 760 L 975 760 L 595 760 L 215 760" fill="none" stroke="#174ca0" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 215 405 L 595 405 L 975 405 L 1355 405 L 1355 760 L 975 760 L 595 760 L 215 760" fill="none" stroke="#5f89ca" stroke-width="4" stroke-dasharray="12 15" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Connectors: top cards -->
+  <g stroke="#231f20" stroke-width="3">
+    <line x1="215" y1="330" x2="215" y2="376"/>
+    <line x1="595" y1="330" x2="595" y2="376"/>
+    <line x1="975" y1="330" x2="975" y2="376"/>
+    <line x1="1355" y1="330" x2="1355" y2="376"/>
+    <line x1="1355" y1="789" x2="1355" y2="835"/>
+    <line x1="975" y1="789" x2="975" y2="835"/>
+    <line x1="595" y1="789" x2="595" y2="835"/>
+    <line x1="215" y1="789" x2="215" y2="835"/>
+  </g>
+
+  <!-- Stop markers -->
+  <g fill="#ffe600" stroke="#231f20" stroke-width="3" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="600" letter-spacing="1" text-anchor="middle">
+    <rect x="177" y="378" width="76" height="54" rx="8"/><text x="215" y="414" fill="#231f20">01</text>
+    <rect x="557" y="378" width="76" height="54" rx="8"/><text x="595" y="414" fill="#231f20">02</text>
+    <rect x="937" y="378" width="76" height="54" rx="8"/><text x="975" y="414" fill="#231f20">03</text>
+    <rect x="1317" y="378" width="76" height="54" rx="8"/><text x="1355" y="414" fill="#231f20">04</text>
+    <rect x="1317" y="733" width="76" height="54" rx="8"/><text x="1355" y="769" fill="#231f20">05</text>
+    <rect x="937" y="733" width="76" height="54" rx="8"/><text x="975" y="769" fill="#231f20">06</text>
+    <rect x="557" y="733" width="76" height="54" rx="8"/><text x="595" y="769" fill="#231f20">07</text>
+    <rect x="177" y="733" width="76" height="54" rx="8"/><text x="215" y="769" fill="#231f20">08</text>
+  </g>
+
+  <!-- Cards: top row -->
+  <g font-family="Arial,Helvetica,sans-serif">
+    <g><rect x="55" y="225" width="320" height="105" fill="#ffffff" stroke="#231f20" stroke-width="3"/><rect x="55" y="225" width="320" height="10" fill="#ffe600"/><text x="78" y="263" fill="#174ca0" font-size="12" font-weight="700" letter-spacing="1">01 // BEGIN WITH MEANING</text><text x="78" y="293" fill="#231f20" font-size="21" font-weight="900">From data to knowledge</text><text x="78" y="316" fill="#69727b" font-size="13">What does an observation mean?</text></g>
+    <g><rect x="435" y="225" width="320" height="105" fill="#ffffff" stroke="#231f20" stroke-width="3"/><rect x="435" y="225" width="320" height="10" fill="#ffe600"/><text x="458" y="263" fill="#174ca0" font-size="12" font-weight="700" letter-spacing="1">02 // MAKE IT TRUSTWORTHY</text><text x="458" y="293" fill="#231f20" font-size="21" font-weight="900">Manage organisational data</text><text x="458" y="316" fill="#69727b" font-size="13">Who defines, owns, and protects it?</text></g>
+    <g><rect x="815" y="225" width="320" height="105" fill="#ffffff" stroke="#231f20" stroke-width="3"/><rect x="815" y="225" width="320" height="10" fill="#ffe600"/><text x="838" y="263" fill="#174ca0" font-size="12" font-weight="700" letter-spacing="1">03 // GIVE DATA STRUCTURE</text><text x="838" y="293" fill="#231f20" font-size="21" font-weight="900">The database approach</text><text x="838" y="316" fill="#69727b" font-size="13">How are relationships represented?</text></g>
+    <g><rect x="1195" y="225" width="320" height="105" fill="#ffffff" stroke="#231f20" stroke-width="3"/><rect x="1195" y="225" width="320" height="10" fill="#ffe600"/><text x="1218" y="263" fill="#174ca0" font-size="12" font-weight="700" letter-spacing="1">04 // TURN RECORDS INTO EVIDENCE</text><text x="1218" y="293" fill="#231f20" font-size="21" font-weight="900">Warehouses &amp; decisions</text><text x="1218" y="316" fill="#69727b" font-size="13">How can data support decisions?</text></g>
+  </g>
+
+  <!-- Cards: bottom row -->
+  <g font-family="Arial,Helvetica,sans-serif">
+    <g><rect x="1195" y="835" width="320" height="105" fill="#ffffff" stroke="#231f20" stroke-width="3"/><rect x="1195" y="835" width="320" height="10" fill="#ffe600"/><text x="1218" y="873" fill="#174ca0" font-size="12" font-weight="700" letter-spacing="1">05 // SEE SCALE AND CONSEQUENCE</text><text x="1218" y="903" fill="#231f20" font-size="21" font-weight="900">Big Data and analytics</text><text x="1218" y="926" fill="#69727b" font-size="13">What changes when data grows?</text></g>
+    <g><rect x="815" y="835" width="320" height="105" fill="#ffffff" stroke="#231f20" stroke-width="3"/><rect x="815" y="835" width="320" height="10" fill="#ffe600"/><text x="838" y="873" fill="#174ca0" font-size="12" font-weight="700" letter-spacing="1">06 // MAKE KNOWLEDGE TRAVEL</text><text x="838" y="903" fill="#231f20" font-size="21" font-weight="900">Knowledge management</text><text x="838" y="926" fill="#69727b" font-size="13">How does experience travel?</text></g>
+    <g><rect x="435" y="835" width="320" height="105" fill="#ffffff" stroke="#231f20" stroke-width="3"/><rect x="435" y="835" width="320" height="10" fill="#ffe600"/><text x="458" y="873" fill="#174ca0" font-size="12" font-weight="700" letter-spacing="1">07 // MAKE THE DIGITAL PHYSICAL</text><text x="458" y="903" fill="#231f20" font-size="21" font-weight="900">Data centres and the cloud</text><text x="458" y="926" fill="#69727b" font-size="13">What infrastructure makes it possible?</text></g>
+    <g><rect x="55" y="835" width="320" height="105" fill="#ffffff" stroke="#231f20" stroke-width="3"/><rect x="55" y="835" width="320" height="10" fill="#ffe600"/><text x="78" y="873" fill="#174ca0" font-size="12" font-weight="700" letter-spacing="1">08 // LOOK AHEAD</text><text x="78" y="903" fill="#231f20" font-size="21" font-weight="900">Quantum computing</text><text x="78" y="926" fill="#69727b" font-size="13">Which capability deserves investment?</text></g>
+  </g>
+
+  <!-- Start and finish -->
+  <g font-family="Arial,Helvetica,sans-serif" font-weight="900">
+    <text x="155" y="470" fill="#231f20" font-size="13">START</text>
+    <text x="1410" y="470" fill="#231f20" font-size="13">CONTINUE</text>
+    <text x="155" y="825" fill="#231f20" font-size="13">FINISH</text>
+  </g>
+
+  <!-- Throughline -->
+  <rect x="70" y="970" width="1460" height="4" fill="#ffe600"/>
+  <text x="70" y="1000" fill="#231f20" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">THE THROUGHLINE</text>
+  <text x="260" y="1000" fill="#174ca0" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="900">Understand it → structure it → govern it → analyse it → share it → extend it</text>
+</svg>
