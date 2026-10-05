@@ -60,7 +60,8 @@ const sectionIntroductions={
  quantum:'Quantum computing looks beyond current architectures while remaining grounded in information-systems questions. This section introduces qubits, superposition, entanglement, algorithms, error correction, and hybrid systems, while separating credible potential from the engineering and organisational challenges that still stand between laboratory results and dependable business use.'
 };
 
-const teachingVisuals={foundations:'/assets/data.png',management:'/assets/erp-mdm-evolution.png',bigdata:'/assets/big-data.png',databases:'/assets/database-evolution.png',warehouses:'/assets/data-warehouse.png',knowledge:'/assets/erp-data.png',datacentres:'/assets/data-centres.png',quantum:'/assets/quantum.png'};
+const asset=(name)=>`${import.meta.env.BASE_URL}assets/${name}`;
+const teachingVisuals={foundations:asset('data.png'),management:asset('erp-mdm-evolution.png'),bigdata:asset('big-data.png'),databases:asset('database-evolution.png'),warehouses:asset('data-warehouse.png'),knowledge:asset('erp-data.png'),datacentres:asset('data-centres.png'),quantum:asset('quantum.png')};
 
 const visuals={
  foundations:['https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80','https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80','https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=900&q=80'],
