@@ -3,6 +3,20 @@ import {createRoot} from 'react-dom/client';
 import {BookOpen, CheckCircle2, ChevronDown, ChevronRight, Database, FileText, Layers3, Lightbulb, Menu, Search, ShieldCheck, Sparkles, Table2, Target, X} from 'lucide-react';
 import './styles.css';
 
+if (typeof document !== 'undefined') {
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest?.('.glossary-nav, .glossary-link')) return;
+    setTimeout(() => {
+      const terms = document.querySelector('.glossary-terms');
+      if (!terms || terms.querySelector('[data-cloud-term]')) return;
+      const item = document.createElement('div');
+      item.dataset.cloudTerm = 'true';
+      item.innerHTML = '<b>Cloud infrastructure</b><p>The physical and digital resources—servers, storage, networks, security, and coordinating software—that make cloud services possible.</p>';
+      terms.appendChild(item);
+    }, 0);
+  });
+}
+
 if (typeof window !== 'undefined' && !window.__accordionScrollBound) {
   window.__accordionScrollBound = true;
   document.addEventListener('click', (event) => {
@@ -52,6 +66,7 @@ const moduleNotes={
  knowledge:{vignette:'VIGNETTE // THE EXPERIENCED TUTOR',vignetteText:'A tutor knows that students often misunderstand one assessment criterion, but this insight lives in their memory and informal conversations. When the tutor leaves, the pattern may disappear. A short annotated example, a searchable FAQ, and a regular review meeting convert part of that tacit knowledge into something the teaching team can find, discuss, and improve.',lens:'Study lens: knowledge management is not a document dump. It needs curation, trust, incentives, and a reason for people to reuse what is captured.\n\nKnowledge management adds value when it helps people solve real problems, not merely when an organisation stores more files. Captured knowledge needs context, ownership, review dates, and a clear audience; otherwise a repository becomes difficult to search and disconnected from everyday work.\n\nThe social side matters too. People must be willing to share experience, challenge outdated guidance, and reuse colleagues’ contributions. Communities of practice, mentoring, searchable examples, and feedback loops help turn individual know-how into organisational capability.'},
  datacentres:{vignette:'VIGNETTE // THE INVISIBLE CAMPUS',vignetteText:'When you stream a lecture recording, your phone is only the visible edge of the service. Files may be stored in several locations, requests routed through networks, and workloads shifted between machines as demand changes. Behind that convenience are buildings, electricity, cooling, backup systems, fibre links, technicians, and contracts that make “the cloud” available.',lens:'Study lens: evaluate infrastructure choices as business and public-policy choices, not just engineering decisions.\n\nA data centre is a physical system with material consequences. Decisions about location, electricity, water, land, cooling, backup power, security, and network connectivity affect cost and resilience, but also communities and environmental policy.\n\nThe cloud therefore does not remove infrastructure; it makes infrastructure less visible to the user. Good analysis connects the convenience of digital services to the resources and trade-offs that make them possible.'},quantum:{vignette:'VIGNETTE // A FUTURE LOGISTICS PROBLEM',vignetteText:'Imagine a delivery network with thousands of vehicles, changing traffic, driver availability, depot constraints, and urgent orders. Classical systems can improve the plan with sophisticated heuristics, but some optimisation problems grow rapidly as variables interact. Quantum computing may eventually help with specialised versions of these problems, if the hardware, algorithm, and data pipeline are suitable.',lens:'Study lens: distinguish a promising research capability from a mature business technology, and ask which problems genuinely need quantum methods.\n\nQuantum computers are not simply faster versions of ordinary computers. They use fragile quantum states and specialised algorithms to target particular problem classes, while conventional systems still control the hardware, prepare data, and interpret results.\n\nMajor obstacles include noise, error correction, cooling or isolation requirements, limited hardware scale, and matching a business problem to a quantum algorithm. A responsible assessment separates demonstrated capability from future possibility and asks what evidence would justify investment.'}
 };
+moduleNotes.datacentres.vignetteText += '\n\nCloud computing means using computing services over the internet instead of relying entirely on your own computer or an organisation’s local servers. When you store photos in iCloud or Google Photos, stream a movie on Netflix, edit a document in Google Docs, or join a Zoom meeting, files, software, and processing power are provided through internet-connected data centres so you can access them from different devices and locations.\n\nCloud infrastructure is the collection of physical and digital resources that makes these services possible: buildings full of servers, data-storage systems, networking equipment, security controls, and software that coordinates everything. Like an electricity grid, cloud providers such as Amazon Web Services, Microsoft Azure, and Google Cloud operate the infrastructure and allow organisations to use computing capacity as needed, often paying for the amount they consume.';
 
 
 const sectionSupport={
