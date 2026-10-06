@@ -48,3 +48,7 @@ body{background:#fff;color:#231f20;font-family:Arial,Helvetica,sans-serif;font-s
 :root{--audit-blue:#e8f3f6}
 .resource-roadmap{margin:1.25rem 0 2rem;padding:1.5rem 1.75rem;border-left:6px solid #ffd900;background:var(--audit-blue);color:#14202d}.resource-roadmap h3{margin:.35rem 0 .7rem;font-size:1.35rem}.resource-roadmap p{max-width:78ch;margin:.55rem 0;line-height:1.65}.objective-outcomes{margin:.75rem 0 0;padding-left:1.15rem}.objective-outcomes li{margin:.55rem 0;line-height:1.35}.key-terms span:not(.rail-label){display:block}
 .art-bigdata .illustration-canvas{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;align-items:center}.art-bigdata .illustration-arrow{display:none}.art-bigdata .illustration-node{min-height:118px}.art-bigdata .illustration-node:nth-of-type(1){grid-column:1}.art-bigdata .illustration-node:nth-of-type(2){grid-column:2}.art-bigdata .illustration-node:nth-of-type(3){grid-column:3}.art-bigdata .illustration-node:nth-of-type(4){grid-column:4}.art-bigdata .illustration-node:nth-of-type(5){grid-column:5}@media(max-width:720px){.art-bigdata .illustration-canvas{grid-template-columns:repeat(2,1fr)}.art-bigdata .illustration-node:nth-of-type(n){grid-column:auto}}
+
+/* shared IS top bar sits above; this header names the module */
+.brand small{margin:0 0 3px}
+@media(max-width:700px){.topbar .brand{display:none}.top-actions{flex:1;justify-content:space-between;gap:12px}.search{width:auto;flex:1;min-width:0}}
